@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysicsLab - Add Course</title>
+  <link rel="stylesheet" href="css_style/style-1.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Physics<span>Lab</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">My Courses</a></li>
+        <li><a href="add-course.html" class="active">Add Course</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="page-header">
+        <h1>Add New Course</h1>
+        <p>Fill in the details below to register a new course.</p>
+      </div>
+
+      <div class="form-container">
+        <form action="#" method="post">
+
+          <div class="form-group">
+            <label for="course-name">Course Name <span class="req">*</span></label>
+            <input
+              type="text"
+              id="course-name"
+              name="course-name"
+              placeholder="e.g. Circuit Analysis II"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="instructor">Instructor <span class="req">*</span></label>
+            <input
+              type="text"
+              id="instructor"
+              name="instructor"
+              placeholder="e.g. Dr. Ahmed Kamal"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="credit-hours">Credit Hours <span class="req">*</span></label>
+              <select id="credit-hours" name="credit-hours" required>
+                <option value="" disabled selected>Select hours</option>
+                <option value="1">1 Hour</option>
+                <option value="2">2 Hours</option>
+                <option value="3">3 Hours</option>
+                <option value="4">4 Hours</option>
+                <option value="5">5 Hours</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="status">Status</label>
+              <select id="status" name="status">
+                <option value="active">Active</option>
+                <option value="pending">Pending</option>
+                <option value="done">Done</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Notes</label>
+            <textarea
+              id="notes"
+              name="notes"
+              placeholder="Topics to focus on, exam tips, reminders..."
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Add Course</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for learning -- <span>PhysicsLab</span> 2025</p>
+  </footer>
+
+</body>
+</html>
